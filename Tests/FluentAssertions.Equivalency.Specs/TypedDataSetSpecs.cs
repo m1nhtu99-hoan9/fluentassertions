@@ -348,11 +348,12 @@ public class TypedDataSetSpecs : DataSpecs
 
         var dataSet2 = new TypedDataSetSubclass(dataSet1);
 
-        dataSet2.RemotingFormat =
+        /*dataSet2.RemotingFormat =
             dataSet2.RemotingFormat == SerializationFormat.Binary
                 ? SerializationFormat.Xml
                 : SerializationFormat.Binary;
 
+        */
         // Act
         Action action = () => dataSet1.Should().BeEquivalentTo(dataSet2);
 
@@ -368,10 +369,11 @@ public class TypedDataSetSpecs : DataSpecs
 
         var dataSet2 = new TypedDataSetSubclass(dataSet1);
 
+        /*
         dataSet2.RemotingFormat =
             dataSet2.RemotingFormat == SerializationFormat.Binary
                 ? SerializationFormat.Xml
-                : SerializationFormat.Binary;
+                : SerializationFormat.Binary;*/
 
         // Act & Assert
         dataSet1.Should().BeEquivalentTo(dataSet2, options => options

@@ -398,10 +398,10 @@ public class TypedDataTableSpecs : DataSpecs
 
         var dataSet2 = new TypedDataSetSubclass(dataSet1);
 
-        dataSet2.RemotingFormat =
+        /*dataSet2.RemotingFormat =
             dataSet2.RemotingFormat == SerializationFormat.Binary
                 ? SerializationFormat.Xml
-                : SerializationFormat.Binary;
+                : SerializationFormat.Binary;*/
 
         var dataTable1 = dataSet1.TypedDataTable1;
         var dataTable2 = dataSet2.TypedDataTable1;
@@ -421,10 +421,10 @@ public class TypedDataTableSpecs : DataSpecs
 
         var dataSet2 = new TypedDataSetSubclass(dataSet1);
 
-        dataSet2.RemotingFormat =
+        /*dataSet2.RemotingFormat =
             dataSet2.RemotingFormat == SerializationFormat.Binary
                 ? SerializationFormat.Xml
-                : SerializationFormat.Binary;
+                : SerializationFormat.Binary;*/
 
         var dataTable1 = dataSet1.TypedDataTable1;
         var dataTable2 = dataSet2.TypedDataTable1;

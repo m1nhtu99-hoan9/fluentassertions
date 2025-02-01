@@ -40,10 +40,6 @@ internal class MemberPathSegmentEqualityComparer : IEqualityComparer<string>
 
     public int GetHashCode(string obj)
     {
-#if NET6_0_OR_GREATER || NETSTANDARD2_1
         return obj.GetHashCode(StringComparison.Ordinal);
-#else
-        return obj.GetHashCode();
-#endif
     }
 }

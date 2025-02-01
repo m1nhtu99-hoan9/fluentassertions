@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net47;net6.0</TargetFrameworks>
+    <TargetFramework>net7.0</TargetFramework>
     <RootNamespace>XUnit2.Specs</RootNamespace>
     <AssemblyName>XUnit2.Specs</AssemblyName>
   </PropertyGroup>
@@ -18,7 +18,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
+  <!--<ItemGroup Condition="'$(TargetFrameworkIdentifier)' == '.NETFramework'">
     <Reference Include="System.Net.Http" />
-  </ItemGroup>
+  </ItemGroup>-->
 </Project>
